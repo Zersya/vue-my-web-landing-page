@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <v-app-bar color="primary" dark>
+    <v-app-bar color="primary" fixed dark>
       <v-app-bar-nav-icon style="margin-left:30px">
         <v-img src="../assets/logo.png" aspect-ratio="1" class="grey lighten-2"></v-img>
       </v-app-bar-nav-icon>
 
-      <!-- <v-toolbar-title>Zein Ersyad</v-toolbar-title> -->
 
       <div class="flex-grow-1"></div>
 
@@ -14,7 +12,6 @@
         <v-btn @click="mySkills" text>My Skill</v-btn>
       </v-toolbar-items>
     </v-app-bar>
-  </div>
 </template>
 
 

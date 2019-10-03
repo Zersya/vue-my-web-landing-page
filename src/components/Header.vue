@@ -1,22 +1,28 @@
 <template>
   <v-container color="primary">
     <v-parallax src="../assets/header.jpg">
-      <v-overlay :opacity="0.25" absolute>
+      <v-overlay :opacity="0.1" absolute>
         <v-card
           light
-          outlined
           class="display-2"
           align="center"
           style="padding:16px;"
           width="350"
+          elevation="12"
           :ripple="false"
-          flat
           @click="show = !show"
         >
-          Welcome
+          <p class="display-3">Hello</p>
           <transition name="slide-fade" mode="out-in">
-            <p v-if="show" class="subtitle-1" key="university">I'm a student at Telkom University</p>
-            <p v-if="!show" class="subtitle-1" key="name">My name is Muhammad Zein Ersyad</p>
+            <p v-if="show" class="subtitle-1" key="university">
+              I'm a student at
+              <strong>Telkom University</strong>
+            </p>
+
+            <p v-if="!show" class="subtitle-1" key="name">
+              My name is
+              <strong>Muhammad Zein Ersyad</strong>
+            </p>
           </transition>
         </v-card>
         <transition name="slide-fade" mode="out-in">
@@ -26,7 +32,13 @@
             </strong>
           </v-progress-linear>
 
-          <div v-if="!show" style="height:25px"></div>
+          <div v-if="!show" style="height:25px">
+            <v-row justify="center">
+              <v-col v-for="interest in interests" :key="interest" align="center">
+                <v-chip color="primary" :ripple="false">{{interest}}</v-chip>
+              </v-col>
+            </v-row>
+          </div>
         </transition>
       </v-overlay>
     </v-parallax>
@@ -37,7 +49,8 @@
 export default {
   name: "Header",
   data: () => ({
-    show: false
+    show: false,
+    interests: ['Programming', 'Badminton', 'Gaming']
   })
 };
 </script>

@@ -7,7 +7,7 @@
     </v-row>
     <v-row>
       <v-col v-for="skill in skills" :key="skill.name" >
-        <v-row>
+        <v-row style="min-height:88px">
           <v-col align="center">
             <p class="body-1">{{ skill.name }}</p>
           </v-col>
@@ -50,7 +50,7 @@ export default {
         value: 70
       },
       {
-        name: "Programming",
+        name: "Programming Interest",
         value: 90
       }
     ]
