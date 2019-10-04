@@ -3,6 +3,7 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import VueRouter from 'vue-router'
 import VueScrollTo from 'vue-scrollto'
+import VueVirtualScroller from 'vue-virtual-scroller'
 import { router } from './router/index'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -20,11 +21,12 @@ library.add(fab)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(VueRouter)
+Vue.use(VueVirtualScroller)
 Vue.use(VueScrollTo, {
   container: "body",
   duration: 500,
   easing: "ease",
-  offset: 0,
+  offset: -80,
   force: true,
   cancelable: true,
   onStart: false,

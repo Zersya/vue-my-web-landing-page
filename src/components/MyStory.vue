@@ -2,13 +2,13 @@
   <v-container>
     <v-row id="myStory">
       <v-col align="center">
-        <p class="display-1">My Story</p>
+        <p class="primary--text display-1">My Story</p>
       </v-col>
     </v-row>
 
     <v-row align="center">
       <v-col order="12">
-        <p class="body-1 text-justify">
+        <p class="primary--text body-1 text-justify">
           The first time I become a developer is focused on Game Development. I also trying to create a simple web application. That's the reason why I choose Informatic Engineering for my degree.
           When I become a college student, I have participated in any National and International robotic contest.
           I have learned so many things, and now I can use that for myself, I like to become a developer, its because there is a logical thing can be implemented when I developing any games/application.

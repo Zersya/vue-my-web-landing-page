@@ -10,6 +10,8 @@
       <v-toolbar-items>
         <v-btn @click="myStory" text>My Story</v-btn>
         <v-btn @click="mySkills" text>My Skill</v-btn>
+        <v-btn @click="myRepo" text>My Repos</v-btn>
+
       </v-toolbar-items>
     </v-app-bar>
 </template>
@@ -26,6 +28,9 @@ export default {
     },
     mySkills() {
       VueScrollTo.scrollTo("#mySkills");
+    },
+    myRepo() {
+      VueScrollTo.scrollTo("#myRepo");
     }
   }
 };

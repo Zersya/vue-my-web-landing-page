@@ -2,7 +2,7 @@
   <v-container>
     <v-row id="mySkills">
       <v-col align="center">
-        <p class="display-1">My Skills</p>
+        <p class="primary--text display-1">My Skills</p>
       </v-col>
     </v-row>
     <v-row>
@@ -19,7 +19,7 @@
               :size="150"
               :width="15"
               :value="skill.value"
-              color="teal"
+              color="primary"
             >{{skill.value}}%</v-progress-circular>
           </v-col>
         </v-row>
