@@ -6,13 +6,13 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col v-for="skill in skills" :key="skill.name" >
+      <v-col v-for="skill in skills" :key="skill.name">
         <v-row style="min-height:88px">
           <v-col align="center">
             <p class="body-1">{{ skill.name }}</p>
           </v-col>
         </v-row>
-        <v-row align="center">
+        <!-- <v-row align="center">
           <v-col align="center">
             <v-progress-circular
               :rotate="360"
@@ -22,7 +22,7 @@
               color="primary"
             >{{skill.value}}%</v-progress-circular>
           </v-col>
-        </v-row>
+        </v-row> -->
       </v-col>
     </v-row>
   </v-container>
@@ -34,29 +34,23 @@ export default {
   data: () => ({
     skills: [
       {
-        name: "Mobile App Development",
-        value: 70
+        name: "Mobile App Development"
       },
       {
-        name: "Web App Development",
-        value: 60
+        name: "Web App Development"
       },
       {
-        name: "Flutter",
-        value: 80
+        name: "Programming Interest"
       },
       {
-        name: "Laravel",
-        value: 70
+        name: "Flutter"
       },
       {
-        name: "Programming Interest",
-        value: 90
+        name: "Laravel"
       }
     ]
   })
 };
 </script>
 
-<style>
-</style>
+<style></style>
